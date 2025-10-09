@@ -293,7 +293,6 @@ namespace Nop.Web.Framework.Migrations.UpgradeTo460
 
             var taxSettings = settingService.LoadSettingAsync<TaxSettings>().Result;
 
-            //#1961
             if (!settingService.SettingExistsAsync(taxSettings, settings => settings.EuVatEnabledForGuests).Result)
             {
                 taxSettings.EuVatEnabledForGuests = false;
