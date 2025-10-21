@@ -298,8 +298,6 @@ namespace Nop.Web.Factories
 
             if (await _customerService.IsGuestAsync(customer) && _taxSettings.EuVatEnabled)
             {
-                model.BillingNewAddress.VatNumber = customer.VatNumber;
-                model.BillingNewAddress.EuVatEnabled = true;
                 model.BillingNewAddress.EuVatEnabledForGuests = _taxSettings.EuVatEnabledForGuests;
             }
 
