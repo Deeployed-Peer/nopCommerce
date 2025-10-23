@@ -104,6 +104,12 @@ namespace Nop.Web.Areas.Admin.Models.Settings
         public bool EuVatEnabled { get; set; }
         public bool EuVatEnabled_OverrideForStore { get; set; }
 
+        /// <summary>
+        /// Gets or sets a value indicating whether EU VAT (the European Union Value Added Tax) is enabled for guests
+        /// </summary>
+        [NopResourceDisplayName("Admin.Configuration.Settings.Tax.EuVatEnabledForGuests")]
+        public bool EuVatEnabledForGuests { get; set; }
+        public bool EuVatEnabledForGuests_OverrideForStore { get; set; }
         [NopResourceDisplayName("Admin.Configuration.Settings.Tax.EuVatShopCountry")]
         public int EuVatShopCountryId { get; set; }
         public bool EuVatShopCountryId_OverrideForStore { get; set; }
