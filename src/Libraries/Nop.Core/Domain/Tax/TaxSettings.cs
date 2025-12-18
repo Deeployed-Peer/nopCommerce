@@ -112,6 +112,7 @@ namespace Nop.Core.Domain.Tax
         /// </summary>
         public int EuVatEnabledForGuests { get; set; }
 asas
+asas
 
         /// <summary>
         /// Gets or sets a shop country identifier
